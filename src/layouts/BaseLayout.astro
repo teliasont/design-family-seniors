@@ -11,6 +11,10 @@ const { title } = Astro.props;
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+
+    <!--Font share -->
+    <link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,401,700,800&display=swap" rel="stylesheet"> 
+     <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500&display=swap" rel="stylesheet"> 
     <title>{title}</title>
 
   </head>
@@ -19,5 +23,7 @@ const { title } = Astro.props;
     <!-- dynamically insert content -->
     <slot />
   
+    <footer>Copyright 2026</footer>
+
   </body>
 </html>
